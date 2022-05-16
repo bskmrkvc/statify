@@ -1,4 +1,4 @@
-import './TeamsStyles.css'
+import './TeamsStyles.css';
 import {Link} from 'react-router-dom'
 import hawks from '../../assets/img/hawks.png';
 import celtics from '../../assets/img/celtics.png';

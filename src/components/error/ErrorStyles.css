@@ -1,0 +1,25 @@
+.error-404{
+    text-align: center;
+}
+
+.error{
+    text-align: center;
+}
+
+.back-to-home{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+    color: black;
+    margin-bottom: 7rem;
+}
+
+
+
+.sadball{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 251px;
+    margin: 0 auto;
+}

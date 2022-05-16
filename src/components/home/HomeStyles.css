@@ -1,0 +1,117 @@
+.hero-wrapper{
+    margin-top: 10rem;
+}
+
+.home-first-section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.home-second-section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: table;
+}
+
+.home-third-section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: table;
+}
+
+.group-home{
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jokic-home{
+    height: 461px;
+    width: 430px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    -webkit-box-shadow: inset 2px -95px 65px -14px rgba(255,255,255,0.9);
+    -moz-box-shadow: inset 2px -95px 65px -14px rgba(255,255,255,0.9);
+    box-shadow: inset 2px -95px 65px -14px rgba(255,255,255,0.9);   
+}
+
+.drose-home{
+    height: 456px;
+    width: 425px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    -webkit-box-shadow: inset 2px -95px 65px -14px rgba(255,255,255,0.9);
+    -moz-box-shadow: inset 2px -95px 65px -14px rgba(255,255,255,0.9);
+    box-shadow: inset 2px -95px 65px -14px rgba(255,255,255,0.9);   
+}
+
+
+span{
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.first-section-center{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+}
+
+.second-section-right{
+    padding-right: 1.5rem;
+    text-align: right;
+}
+
+.third-section-left{
+    padding-left: 1.5rem;
+    text-align: left;
+}
+  
+
+
+@media screen and (max-width: 940px) {
+    .group-home{
+        width: 85%;
+        height: 85%;
+    }
+
+    .jokic-home{
+        width: 323px;
+        height: 345px;
+    }
+
+    .drose-home{
+        width: 323px;
+        height: 345px;
+    }
+
+    span {
+        float: left;
+        clear: left;
+    }
+
+    .second-section-right{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+    }
+
+    .third-section-left{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+    }
+}

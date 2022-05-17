@@ -84,7 +84,7 @@ function Teams() {
               <a href="/">
                 <li className="cavs">
                   <div className="bottom-2line">Cleveland Cavaliers</div>
-                  <img src={cavs} alt="Cleveland Cavaliers" className="team-logo-2line"></img>
+                  <img src={cavs} alt="Cleveland Cavaliers" className="team-logo"></img>
                 </li>
               </a>
             </Link>
@@ -116,7 +116,7 @@ function Teams() {
               <a href="/">
                 <li className="warriors">
                   <div className="bottom-2line">Golden State Warriors</div>
-                  <img src={warriors} alt="Golden State Warriors" className="team-logo-2line"></img>
+                  <img src={warriors} alt="Golden State Warriors" className="team-logo"></img>
                 </li>
               </a>
             </Link>
@@ -140,7 +140,7 @@ function Teams() {
               <a href="/">
                 <li className="clippers">
                   <div className="bottom-2line">Los Angelles Clippers</div>
-                  <img src={clippers} alt="Los Angelles Clippers" className="team-logo-2line"></img>
+                  <img src={clippers} alt="Los Angelles Clippers" className="team-logo"></img>
                 </li>
               </a>
             </Link>
@@ -188,7 +188,7 @@ function Teams() {
               <a href="/">
                 <li className="pelicans">
                   <div className="bottom-2line">New Orleans Pelicans</div>
-                  <img src={pelicans} alt="New Orleans Pelicans" className="team-logo-2line"></img>
+                  <img src={pelicans} alt="New Orleans Pelicans" className="team-logo"></img>
                 </li>
               </a>
             </Link>
@@ -236,7 +236,7 @@ function Teams() {
               <a href="/">
                 <li className="blazers">
                   <div className="bottom-2line">Portland Trailblazers</div>
-                  <img src={blazers} alt="Portland Trailblazers" className="team-logo-2line"></img>
+                  <img src={blazers} alt="Portland Trailblazers" className="team-logo"></img>
                 </li>
               </a>
             </Link>
@@ -276,7 +276,7 @@ function Teams() {
               <a href="/">
                 <li className="wizzards">
                   <div className="bottom-2line">Washington Wizzards</div>
-                  <img src={wizzards} alt="Washington Wizzards" className="team-logo-2line"></img>
+                  <img src={wizzards} alt="Washington Wizzards" className="team-logo"></img>
                 </li>
               </a>
             </Link>

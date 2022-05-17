@@ -86,6 +86,7 @@ function App() {
         <Route path="/washington-wizzards" element={<Wizzards />}/>
         <Route path="*" element={<Error />}/>
       </Routes>
+      
       <Footer/>
     </div>
   );

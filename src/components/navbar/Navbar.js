@@ -21,11 +21,11 @@ function Navbar() {
             {/* react router implementation in navbar*/}
             <div className="navbar-link">
                 <ul className="nav-menu">
-                    <Link to='/'><li>Home</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-                    <Link to='/search'><li>Search</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <Link to='/teams'><li>Teams</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                    <Link to='/leaders'><li>Leaders</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-                    <Link to='/about'><li>About</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <Link to='/'><li className="navbar-li">Home</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+                    <Link to='/search'><li className="navbar-li">Search</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <Link to='/teams'><li className="navbar-li">Teams</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <Link to='/leaders'><li className="navbar-li">Leaders</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                    <Link to='/about'><li className="navbar-li">About</li></Link>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                 </ul>
             </div>
             {/* icons for "web view" */}
@@ -43,11 +43,11 @@ function Navbar() {
             <div className={nav ? 'mobile-menu active' : 'mobile-menu'}>
                 {/* mobile navigation */}
                 <ul className="mobile-nav">
-                    <Link to='/' onClick={handleNav}><li>Home</li></Link>
-                    <Link to='/search' onClick={handleNav}><li>Search</li></Link>
-                    <Link to='/teams' onClick={handleNav}><li>Teams</li></Link>
-                    <Link to='/leaders' onClick={handleNav}><li>Leaders</li></Link>
-                    <Link to='/about' onClick={handleNav}><li>About</li></Link>
+                    <Link to='/' onClick={handleNav}><li className="navbar-li">Home</li></Link>
+                    <Link to='/search' onClick={handleNav}><li className="navbar-li">Search</li></Link>
+                    <Link to='/teams' onClick={handleNav}><li className="navbar-li">Teams</li></Link>
+                    <Link to='/leaders' onClick={handleNav}><li className="navbar-li">Leaders</li></Link>
+                    <Link to='/about' onClick={handleNav}><li className="navbar-li">About</li></Link>
                 </ul>
                 {/* instead of icons, buttons are used for mobile view */}
                 <div className="mobile-menu-bottom">

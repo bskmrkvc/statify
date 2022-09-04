@@ -24,8 +24,8 @@
     right: 5px;
 }
 
-.banner-teams-hornets{
-    background-image: url("../../assets/img/hornets-arena.jpg");
+.banner-teams-rockets{
+    background-image: url("../../assets/img/rockets-arena.jpg");
     background-position: 2rem;
     background-size: 100%;
     box-shadow: inset 200px -10px 120px 80px rgba(0,0,0,1);
@@ -45,7 +45,7 @@
     box-shadow: 1px 68px 122px -51px rgba(0,0,0,0.5);
 }
 
-.teams-hornets-roster{
+.teams-rockets-roster{
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
@@ -162,12 +162,12 @@
     min-height: 40%;
 }
 
-.hornets-players{
+.rockets-players{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    background: rgb(29,17,96);
-    background: linear-gradient(312deg, rgba(29,17,96,1) 0%, rgba(0,120,140,1) 100%);
+    background: rgb(206,17,65);
+    background: linear-gradient(132deg, rgba(206,17,65,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .about-text{

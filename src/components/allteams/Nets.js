@@ -2,6 +2,67 @@ import logo from '../../assets/img/nets.png';
 import './NetsTeamStyle.css';
 
 
+const players = [
+  {id: 1, name: 'Kevin Durant', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png' , jerseyNumber: '7',  position: 'F', country: 'USA'},
+  {id: 2, name: 'Kyrie Irving', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/202681.png' , jerseyNumber: '11',  position: 'G', country: 'USA'},
+  {id: 3, name: 'Ben Simmons', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1627732.png' , jerseyNumber: '10',  position: 'G-F', country: 'AUS'},
+  {id: 4, name: 'Seth Curry', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/203552.png' , jerseyNumber: '30',  position: 'G', country: 'USA'},
+  {id: 5, name: 'Joe Harris', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/203925.png' , jerseyNumber: '12',  position: 'G-F', country: 'USA'},
+  {id: 6, name: 'Patty Mills', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/201988.png' , jerseyNumber: '8',  position: 'G', country: 'AUS'},
+  {id: 7, name: 'LaMarcus Aldridge', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/200746.png' , jerseyNumber: '21',  position: 'C-F', country: 'USA'},
+  {id: 8, name: 'Bruce Brown', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1628971.png' , jerseyNumber: '1',  position: 'G-F', country: 'USA'},
+  {id: 9, name: 'Goran Dragic', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/201609.png' , jerseyNumber: '9',  position: 'G', country: 'SLO'},
+  {id: 10, name: 'Nicolas Claxton', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1629651.png' , jerseyNumber: '33',  position: 'F-C', country: 'USA'},
+  {id: 11, name: 'Andre Drummond', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/203083.png' , jerseyNumber: '0',  position: 'C', country: 'USA'},
+  {id: 12, name: 'Cam Thomas', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630560.png' , jerseyNumber: '24',  position: 'G', country: 'USA'},
+  {id: 13, name: 'Kessler Eswards', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630556.png' , jerseyNumber: '14',  position: 'F', country: 'USA'},
+  {id: 14, name: 'Blake Griffin', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/201933.png' , jerseyNumber: '2',  position: 'F', country: 'USA'},
+  {id: 14, name: "Day'Ron Sharpe", logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630549.png' , jerseyNumber: '20',  position: 'F', country: 'USA'}
+  
+];
+
+
+function Player(props) {
+  const name = (
+    props.players.name
+);
+
+  const logoURL = (
+    props.players.logoURL
+);
+
+  const position = (
+      props.players.position
+  );   
+  
+  const jerseyNumber = (
+    props.players.jerseyNumber
+  );
+  
+  const country = (
+    props.players.country
+  );
+  
+  return (
+    <li className="nets-players">
+      <div className="top">{name}</div>
+      <img src={ logoURL } alt={name} className="player-picture"></img>
+      <div className="bottom">
+        <span>
+          <h4 style={{fontWeight: 'normal'}}>{position}</h4>
+        </span>
+        <span>
+          <h4>{jerseyNumber}</h4>
+        </span>
+        <span>
+          <h4 style={{fontWeight: 'normal'}}>{country}</h4>
+        </span>
+      </div>
+    </li>
+  );
+}
+
+
 
 function Nets() {
     return (
@@ -39,246 +100,20 @@ function Nets() {
         <div className="teams-players-container">
           <div className="container-players">
             <ul>
-
-              <li className="nets-players">
-                <div className="top">Kevin Durant</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png" } alt="Kevin Durant" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 7 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Kyrie Irving</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/202681.png" } alt="Kyrie Irving" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 11 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Ben Simmons</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1627732.png" } alt="Ben Simmons" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G-F</h4>
-                  </span>
-                  <span>
-                    <h4> 10 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>AUS</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Seth Curry</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/203552.png" } alt="Seth Curry" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 30 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Joe Harris</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/203925.png" } alt="Joe Harris" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G-F</h4>
-                  </span>
-                  <span>
-                    <h4> 12 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Patty Mills</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/201988.png" } alt="Patty Mills" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 8 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>AUS</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">LaMarcus Aldridge</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/200746.png" } alt="LaMarcus Aldridge" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C-F</h4>
-                  </span>
-                  <span>
-                    <h4> 21 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Bruce Brown</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1628971.png" } alt="Bruce Brown" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G-F</h4>
-                  </span>
-                  <span>
-                    <h4> 1 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Goran Dragic</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/201609.png" } alt="Daniel Theis" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 9 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>SLO</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Nicolas Claxton</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1629651.png" } alt="Nicolas Claxton" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-C</h4>
-                  </span>
-                  <span>
-                    <h4> 33 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Andre Drummond</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/203083.png" } alt="Andre Drummond" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C</h4>
-                  </span>
-                  <span>
-                    <h4> 0 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Cam Thomas</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630560.png" } alt="Cam Thomas" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 24 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Kessler Edwards</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630556.png" } alt="Kessler Edwards" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 14 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Blake Griffin</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/201933.png" } alt="Blake Griffin" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 2 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="nets-players">
-                <div className="top">Day'Ron Sharpe</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630549.png" } alt="Day'Ron Sharpe" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 20</h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
+              <Player players={players[0]}/>
+              <Player players={players[1]}/>
+              <Player players={players[2]}/>
+              <Player players={players[3]}/>
+              <Player players={players[4]}/>
+              <Player players={players[5]}/>
+              <Player players={players[6]}/>
+              <Player players={players[7]}/>
+              <Player players={players[8]}/>
+              <Player players={players[9]}/>
+              <Player players={players[10]}/>
+              <Player players={players[11]}/>
+              <Player players={players[12]}/>
+              <Player players={players[13]}/>
 
             </ul>
           </div>

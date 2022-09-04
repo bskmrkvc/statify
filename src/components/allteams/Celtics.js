@@ -2,6 +2,67 @@ import logo from '../../assets/img/celtics.png';
 import './CelticsTeamStyle.css';
 
 
+const players = [
+  {id: 1, name: 'Jayson Tatum', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628369.png' , jerseyNumber: '0',  position: 'F-G', country: 'USA'},
+  {id: 2, name: 'Jaylen Brown', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1627759.png' , jerseyNumber: '7',  position: 'G-F', country: 'USA'},
+  {id: 3, name: 'Marcus Smart', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/203935.png' , jerseyNumber: '36',  position: 'G', country: 'USA'},
+  {id: 4, name: 'Derrick White', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628401.png' , jerseyNumber: '9',  position: 'G', country: 'USA'},
+  {id: 5, name: 'Al Horford', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/201143.png' , jerseyNumber: '42',  position: 'C-F', country: 'DOM'},
+  {id: 6, name: 'Robert Williams III', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1629057.png' , jerseyNumber: '44',  position: 'C-F', country: 'USA'},
+  {id: 7, name: 'Grant Williams', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1629684.png' , jerseyNumber: '12',  position: 'F', country: 'USA'},
+  {id: 8, name: 'Daniel Theis', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628464.png' , jerseyNumber: '27',  position: 'F-C', country: 'GER'},
+  {id: 9, name: 'Peyton Pritchard', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630202.png' , jerseyNumber: '11',  position: 'G', country: 'USA'},
+  {id: 10, name: 'Aaron Nesmith', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630174.png' , jerseyNumber: '26',  position: 'G-F', country: 'FRA'},
+  {id: 11, name: 'Sam Hauser', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630573.png' , jerseyNumber: '30',  position: 'F', country: 'USA'},
+  {id: 12, name: 'Luke Kornet', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628436.png' , jerseyNumber: '40',  position: 'C-F', country: 'USA'},
+  {id: 13, name: 'Nik Stauskas', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/203917.png' , jerseyNumber: '13',  position: 'G', country: 'CAN'},
+  {id: 14, name: 'Malik Fitts', logoURL: 'https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630238.png' , jerseyNumber: '8',  position: 'F', country: 'USA'}
+  
+];
+
+
+function Player(props) {
+  const name = (
+    props.players.name
+);
+
+  const logoURL = (
+    props.players.logoURL
+);
+
+  const position = (
+      props.players.position
+  );   
+  
+  const jerseyNumber = (
+    props.players.jerseyNumber
+  );
+  
+  const country = (
+    props.players.country
+  );
+  
+  return (
+    <li className="celtics-players">
+      <div className="top">{name}</div>
+      <img src={ logoURL } alt={name} className="player-picture"></img>
+      <div className="bottom">
+        <span>
+          <h4 style={{fontWeight: 'normal'}}>{position}</h4>
+        </span>
+        <span>
+          <h4>{jerseyNumber}</h4>
+        </span>
+        <span>
+          <h4 style={{fontWeight: 'normal'}}>{country}</h4>
+        </span>
+      </div>
+    </li>
+  );
+}
+
+
+
 function Celtics() {
   return (
     <div className="App">
@@ -38,231 +99,20 @@ function Celtics() {
         <div className="teams-players-container">
           <div className="container-players">
             <ul>
-
-              <li className="celtics-players">
-                <div className="top">Jayson Tatum</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628369.png" } alt="Jayson Tatum" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-G</h4>
-                  </span>
-                  <span>
-                    <h4> 0 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Jaylen Brown</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1627759.png" } alt="Jaylen Brown" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G-F</h4>
-                  </span>
-                  <span>
-                    <h4> 7 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Marcus Smart</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/203935.png" } alt="Marcus Smart" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 36 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Derrick White</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628401.png" } alt="Derrick White" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 9 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Al Horford</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/201143.png" } alt="Al Horford" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C-F</h4>
-                  </span>
-                  <span>
-                    <h4> 42 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>DOM</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Robert Williams III</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1629057.png" } alt="Atlanta Hawks" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C-F</h4>
-                  </span>
-                  <span>
-                    <h4> 44 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Grant Williams</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1629684.png" } alt="Grant Williams" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 12 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Daniel Theis</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628464.png" } alt="Daniel Theis" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-C</h4>
-                  </span>
-                  <span>
-                    <h4> 27 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>GER</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Peyton Pritchard</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630202.png" } alt="Peyton Pritchard" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 11 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Aaron Nesmith</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630174.png" } alt="Aaron Nesmith" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G-F</h4>
-                  </span>
-                  <span>
-                    <h4> 26 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>FRA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Sam Hauser</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630573.png" } alt="Sam Hauser" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 30 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Luke Kornet</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1628436.png" } alt="Luke Kornet" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C-F</h4>
-                  </span>
-                  <span>
-                    <h4> 40 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Nik Stauskas</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/203917.png" } alt="Nik Stauskas" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 13 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>CAN</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="celtics-players">
-                <div className="top">Malik Fitts</div>
-                <img src={ "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/1040x760/1630238.png" } alt="Malik Fitts" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 8 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
+              <Player players={players[0]}/>
+              <Player players={players[1]}/>
+              <Player players={players[2]}/>
+              <Player players={players[3]}/>
+              <Player players={players[4]}/>
+              <Player players={players[5]}/>
+              <Player players={players[6]}/>
+              <Player players={players[7]}/>
+              <Player players={players[8]}/>
+              <Player players={players[9]}/>
+              <Player players={players[10]}/>
+              <Player players={players[11]}/>
+              <Player players={players[12]}/>
+              <Player players={players[13]}/>
             </ul>
           </div>
         </div>

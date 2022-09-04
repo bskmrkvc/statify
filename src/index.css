@@ -49,6 +49,17 @@ button {
   font-family: 'Poppins', sans-serif;
 }
 
+::webkit-scrollbar{
+  width:15px;
+}
+
+::webkit-scrollbar-track{
+  background: #ddd;
+}
+
+::webkit-scrollbar-thumb{
+  background: #000;
+}
 
 @media screen and (max-width: 940px) {
   h1 {

@@ -24,11 +24,9 @@
     right: 5px;
 }
 
-.banner-teams-hornets{
-    background-image: url("../../assets/img/hornets-arena.jpg");
-    background-position: 2rem;
-    background-size: 100%;
-    box-shadow: inset 200px -10px 120px 80px rgba(0,0,0,1);
+.banner-teams-cavs{
+    background-image: url("../../assets/img/cavs-arena.jpg");
+    box-shadow: inset 0px 0px 100px 80px rgba(0,0,0,1);
     padding-top:5px;
     padding-bottom:10px;
     display: flex;
@@ -45,7 +43,7 @@
     box-shadow: 1px 68px 122px -51px rgba(0,0,0,0.5);
 }
 
-.teams-hornets-roster{
+.teams-cavs-roster{
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
@@ -162,12 +160,12 @@
     min-height: 40%;
 }
 
-.hornets-players{
+.cavs-players{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    background: rgb(29,17,96);
-    background: linear-gradient(312deg, rgba(29,17,96,1) 0%, rgba(0,120,140,1) 100%);
+    background: rgb(134,0,56);
+    background: linear-gradient(312deg, rgba(134,0,56,1) 0%, rgba(253,187,48,1) 100%);
 }
 
 .about-text{
@@ -211,3 +209,6 @@
     }
 
 }
+
+
+

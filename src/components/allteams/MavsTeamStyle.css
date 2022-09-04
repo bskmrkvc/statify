@@ -24,7 +24,7 @@
     right: 5px;
 }
 
-.banner-teams-hornets{
+.banner-teams-mavs{
     background-image: url("../../assets/img/hornets-arena.jpg");
     background-position: 2rem;
     background-size: 100%;
@@ -45,7 +45,7 @@
     box-shadow: 1px 68px 122px -51px rgba(0,0,0,0.5);
 }
 
-.teams-hornets-roster{
+.teams-mavs-roster{
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
@@ -162,12 +162,12 @@
     min-height: 40%;
 }
 
-.hornets-players{
+.mavs-players{
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    background: rgb(29,17,96);
-    background: linear-gradient(312deg, rgba(29,17,96,1) 0%, rgba(0,120,140,1) 100%);
+    background: rgb(0,83,140);
+    background: linear-gradient(312deg, rgba(0,83,140,1) 0%, rgba(184,196,202,1) 100%);
 }
 
 .about-text{

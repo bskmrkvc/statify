@@ -1,6 +1,65 @@
 import logo from '../../assets/img/hornets.png';
 import './HornetsTeamStyle.css';
 
+const players = [
+  {id: 1, name: 'Miles Bridges', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1628970.png' , jerseyNumber: '0',  position: 'F', country: 'USA'},
+  {id: 2, name: 'LaMelo Ball', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630163.png' , jerseyNumber: '2',  position: 'G', country: 'USA'},
+  {id: 3, name: 'Terry Rozier', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1626179.png' , jerseyNumber: '3',  position: 'G', country: 'USA'},
+  {id: 4, name: 'Gordon Hayward', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/202330.png' , jerseyNumber: '20',  position: 'F', country: 'USA'},
+  {id: 5, name: 'Kelly Oubre Jr.', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1626162.png' , jerseyNumber: '12',  position: 'F-G', country: 'USA'},
+  {id: 6, name: 'P.J. Washington', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1629023.png' , jerseyNumber: '8',  position: 'F-C', country: 'USA'},
+  {id: 7, name: 'Montrezl Harrell', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1626149.png' , jerseyNumber: '11',  position: 'F', country: 'USA'},
+  {id: 8, name: 'Cody Martin', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1628998.png' , jerseyNumber: '24',  position: 'F-C', country: 'USA'},
+  {id: 9, name: 'Mason Plumlee', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/203486.png' , jerseyNumber: '4',  position: 'G', country: 'USA'},
+  {id: 10, name: 'Isaiah Thomas', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/202738.png' , jerseyNumber: '6',  position: 'F-C', country: 'USA'},
+  {id: 11, name: 'James Bouknight', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630547.png' , jerseyNumber: '5',  position: 'G', country: 'USA'},
+  {id: 12, name: 'Nick Richards', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630208.png' , jerseyNumber: '14',  position: 'C', country: 'JAM'},
+  {id: 13, name: 'JT Thor', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630550.png' , jerseyNumber: '21',  position: 'F', country: 'USA'},
+  {id: 14, name: 'Kai Jones', logoURL: 'https://cdn.nba.com/headshots/nba/latest/1040x760/1630539.png' , jerseyNumber: '23',  position: 'C-F', country: 'BAH'}
+  
+];
+
+
+function Player(props) {
+  const name = (
+    props.players.name
+);
+
+  const logoURL = (
+    props.players.logoURL
+);
+
+  const position = (
+      props.players.position
+  );   
+  
+  const jerseyNumber = (
+    props.players.jerseyNumber
+  );
+  
+  const country = (
+    props.players.country
+  );
+  
+  return (
+    <li className="hornets-players">
+      <div className="top">{name}</div>
+      <img src={ logoURL } alt={name} className="player-picture"></img>
+      <div className="bottom">
+        <span>
+          <h4 style={{fontWeight: 'normal'}}>{position}</h4>
+        </span>
+        <span>
+          <h4>{jerseyNumber}</h4>
+        </span>
+        <span>
+          <h4 style={{fontWeight: 'normal'}}>{country}</h4>
+        </span>
+      </div>
+    </li>
+  );
+}
+
 
 function Hornets() {
     return (
@@ -38,247 +97,20 @@ function Hornets() {
         <div className="teams-players-container">
           <div className="container-players">
             <ul>
-
-              <li className="hornets-players">
-                <div className="top">Miles Bridges</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1628970.png" } alt="Miles Bridges" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 0 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">LaMelo Ball</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630163.png" } alt="LaMelo Ball" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 2 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Terry Rozier</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1626179.png" } alt="Terry Rozier" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 3 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Gordon Hayward</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/202330.png" } alt="Gordon Hayward" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 20 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Kelly Oubre Jr.</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1626162.png" } alt="Kelly Oubre Jr." className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-G</h4>
-                  </span>
-                  <span>
-                    <h4> 12 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">P.J. Washington</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1629023.png" } alt="P.J. Washington" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 25 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Montrezl Harrell</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1626149.png" } alt="Montrezl Harrell" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-C</h4>
-                  </span>
-                  <span>
-                    <h4> 8 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Cody Martin</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1628998.png" } alt="Cody Martin" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 11 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Mason Plumlee</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/203486.png" } alt="Mason Plumlee" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-C</h4>
-                  </span>
-                  <span>
-                    <h4> 24 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Isaiah Thomas</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/202738.png" } alt="Isaiah Thomas" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 4 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Jalen McDaniels</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1629667.png" } alt="Jalen McDaniels" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F-C</h4>
-                  </span>
-                  <span>
-                    <h4> 6 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">James Bouknight</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630547.png" } alt="James Bouknight" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>G</h4>
-                  </span>
-                  <span>
-                    <h4> 5 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Nick Richards</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630208.png" } alt="Nick Richards" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C</h4>
-                  </span>
-                  <span>
-                    <h4> 14 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>JAM</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">JT Thor</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630550.png" } alt="JT Thor" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>F</h4>
-                  </span>
-                  <span>
-                    <h4> 21 </h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>USA</h4>
-                  </span>
-                </div>
-              </li>
-
-              <li className="hornets-players">
-                <div className="top">Kai Jones</div>
-                <img src={ "https://cdn.nba.com/headshots/nba/latest/1040x760/1630539.png" } alt="Kai Jones" className="player-picture"></img>
-                <div className="bottom">
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>C-F</h4>
-                  </span>
-                  <span>
-                    <h4> 23</h4>
-                  </span>
-                  <span>
-                    <h4 style={{fontWeight: 'normal'}}>BAH</h4>
-                  </span>
-                </div>
-              </li>
-
+              <Player players={players[0]}/>
+              <Player players={players[1]}/>
+              <Player players={players[2]}/>
+              <Player players={players[3]}/>
+              <Player players={players[4]}/>
+              <Player players={players[5]}/>
+              <Player players={players[6]}/>
+              <Player players={players[7]}/>
+              <Player players={players[8]}/>
+              <Player players={players[9]}/>
+              <Player players={players[10]}/>
+              <Player players={players[11]}/>
+              <Player players={players[12]}/>
+              <Player players={players[13]}/>
             </ul>
           </div>
         </div>

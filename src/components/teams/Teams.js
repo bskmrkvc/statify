@@ -179,7 +179,7 @@ function Teams() {
             <Link to="/minnesota-timberwolves">
               <a href="/">
                 <li className="wolves">
-                  <div className="bottom-2line">Minnesota Timberwolves</div>
+                  <div className="bottom-2line">Minn. Timberwolves</div>
                   <img src={wolves} alt="Minnesota Timberwolves" className="team-logo-2line"></img>
                 </li>
               </a>

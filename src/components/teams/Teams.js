@@ -40,7 +40,7 @@ function Teams() {
 
         <div className="container">
           <ul className="teams">
-            <Link to="/atlanta-hawks">
+            <Link to="/ATL">
               <a href='/'>
                 <li className="hawks">
                   <div className="bottom">Atlanta Hawks</div>
@@ -48,7 +48,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/boston-celtics">
+            <Link to="/BOS">
               <a href="/">
                 <li className="celtics">
                   <div className="bottom">Boston Celtics</div>
@@ -56,7 +56,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/brooklyn-nets">
+            <Link to="/BKN">
               <a href="/">
                 <li className="nets">
                   <div className="bottom">Brooklyn Nets</div>
@@ -64,7 +64,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/charlotte-hornets">
+            <Link to="/CHA">
               <a href="/">
                 <li className="hornets">
                   <div className="bottom">Charlotte Hornets</div>
@@ -72,7 +72,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/chicago-bulls">
+            <Link to="/CHI">
               <a href="/">  
                 <li className="bulls">
                   <div className="bottom">Chicago Bulls</div>
@@ -80,7 +80,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/cleveland-cavaliers">
+            <Link to="/CLE">
               <a href="/">
                 <li className="cavs">
                   <div className="bottom-2line">Cleveland Cavaliers</div>
@@ -88,7 +88,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/dallas-mavericks">
+            <Link to="/DAL">
               <a href="/">
                 <li className="mavs">
                   <div className="bottom">Dallas Mavericks</div>
@@ -96,7 +96,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/denver-nuggets">
+            <Link to="/DEN">
               <a href="/">
                 <li className="nuggets">
                   <div className="bottom">Denver Nuggets</div>
@@ -104,7 +104,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/detroit-pistons">
+            <Link to="/DET">
               <a href="/">
                 <li className="pistons">
                   <div className="bottom">Detroit Pistons</div>
@@ -112,7 +112,7 @@ function Teams() {
                 </li>
               </a>  
             </Link>
-            <Link to="/golden-state-warriors">
+            <Link to="/GSW">
               <a href="/">
                 <li className="warriors">
                   <div className="bottom-2line">Golden State Warriors</div>
@@ -120,7 +120,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/houston-rockets">
+            <Link to="/HOU">
               <a href="/">
                 <li className="rockets">
                   <div className="bottom">Houston Rockets</div>
@@ -128,7 +128,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/indiana-pacers">
+            <Link to="/IND">
               <a href="/">
                 <li className="pacers">
                   <div className="bottom">Indiana Pacers</div>
@@ -136,7 +136,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/los-angeles-clippers">
+            <Link to="/LAC">
               <a href="/">
                 <li className="clippers">
                   <div className="bottom-2line">Los Angelles Clippers</div>
@@ -144,7 +144,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/los-angeles-lakers">
+            <Link to="/LAL">
               <a href="/">
                 <li className="lakers">
                   <div className="bottom">Los Angeles Lakers</div>
@@ -152,7 +152,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/memphis-grizzlies">
+            <Link to="/MEM">
               <a href="/">
                 <li className="grizzlies">
                   <div className="bottom">Memphis Grizzlies</div>
@@ -160,7 +160,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/miami-heat">
+            <Link to="/MIA">
               <a href="/">
                 <li className="heat">
                   <div className="bottom">Miami Heat</div>
@@ -168,7 +168,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/milwaukee-bucks">
+            <Link to="/MIL">
               <a href="/">
                 <li className="bucks">
                   <div className="bottom">Milwaukee Bucks</div>
@@ -176,7 +176,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/minnesota-timberwolves">
+            <Link to="/MIN">
               <a href="/">
                 <li className="wolves">
                   <div className="bottom-2line">Minn. Timberwolves</div>
@@ -184,7 +184,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/new-orleans-pelicans">
+            <Link to="/NOP">
               <a href="/">
                 <li className="pelicans">
                   <div className="bottom-2line">New Orleans Pelicans</div>
@@ -192,7 +192,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/new-york-knicks">
+            <Link to="/NYK">
               <a href="/">
                 <li className="knicks">
                   <div className="bottom">New York Knicks</div>
@@ -200,7 +200,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/oklahoma-thunder">
+            <Link to="/OKC">
               <a href="/">
                 <li className="thunder">
                   <div className="bottom">Oklahoma Thunder</div>
@@ -208,7 +208,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/orlando-magic">
+            <Link to="/ORL">
               <a href="/">
                 <li className="magic">
                   <div className="bottom">Orlando Magic</div>
@@ -216,7 +216,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/philladelphia-76ers">
+            <Link to="/PHI">
               <a href="/">
                 <li className="philly">
                   <div className="bottom">Philladelphia 76ers</div>
@@ -224,7 +224,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/phoenix-suns">
+            <Link to="/PHX">
               <a href="/">
                 <li className="suns">
                   <div className="bottom">Phoenix Suns</div>
@@ -232,7 +232,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/portland-trailblazers">
+            <Link to="/POR">
               <a href="/">
                 <li className="blazers">
                   <div className="bottom-2line">Portland Trailblazers</div>
@@ -240,7 +240,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/sacramento-kings">
+            <Link to="/SAC">
               <a href="/">
                 <li className="kings">
                   <div className="bottom">Sacramento Kings</div>
@@ -248,7 +248,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/san-antonio-spurs">
+            <Link to="/SAS">
               <a href="/">
                 <li className="spurs">
                   <div className="bottom">San Antonio Spurs</div>
@@ -256,7 +256,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/toronto-raptors">
+            <Link to="/TOR">
               <a href="/">
                 <li className="raptors">
                   <div className="bottom">Toronto Raptors</div>
@@ -264,7 +264,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/utah-jazz">
+            <Link to="/UTA">
               <a href="/">
                 <li className="jazz">
                   <div className="bottom">Utah Jazz</div>
@@ -272,7 +272,7 @@ function Teams() {
                 </li>
               </a>
             </Link>
-            <Link to="/washington-wizzards">
+            <Link to="/WSH">
               <a href="/">
                 <li className="wizzards">
                   <div className="bottom-2line">Washington Wizzards</div>

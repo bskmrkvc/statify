@@ -54,36 +54,36 @@ function App() {
         <Route path="/teams" element={<Teams />}/>
         <Route path="/leaders" element={<Leaders />}/>
         <Route path="/about" element={<About />}/>
-        <Route path="/atlanta-hawks" element={<Hawks />}/>
-        <Route path="/boston-celtics" element={<Celtics />}/>
-        <Route path="/brooklyn-nets" element={<Nets />}/>
-        <Route path="/charlotte-hornets" element={<Hornets />}/>
-        <Route path="/chicago-bulls" element={<Bulls />}/>
-        <Route path="/cleveland-cavaliers" element={<Cavs />}/>
-        <Route path="/dallas-mavericks" element={<Mavs />}/>
-        <Route path="/denver-nuggets" element={<Nuggets />}/>
-        <Route path="/detroit-pistons" element={<Pistons />}/>
-        <Route path="/golden-state-warriors" element={<Warriors />}/>
-        <Route path="/houston-rockets" element={<Rockets />}/>
-        <Route path="/indiana-pacers" element={<Pacers />}/>
-        <Route path="/los-angeles-clippers" element={<Clippers />}/>
-        <Route path="/los-angeles-lakers" element={<Lakers />}/>
-        <Route path="/memphis-grizzlies" element={<Grizzlies />}/>
-        <Route path="/miami-heat" element={<Heat />}/>
-        <Route path="/milwaukee-bucks" element={<Bucks />}/>
-        <Route path="/minnesota-timberwolves" element={<Wolves />}/>
-        <Route path="/new-orleans-pelicans" element={<Pelicans />}/>
-        <Route path="/new-york-knicks" element={<Knicks />}/>
-        <Route path="/oklahoma-thunder" element={<Thunder />}/>
-        <Route path="/orlando-magic" element={<Magic />}/>
-        <Route path="/philladelphia-76ers" element={<Philly />}/>
-        <Route path="/phoenix-suns" element={<Suns />}/>
-        <Route path="//portland-trailblazers" element={<Blazers />}/>
-        <Route path="/sacramento-kings" element={<Kings />}/>
-        <Route path="/san-antonio-spurs" element={<Spurs />}/>
-        <Route path="/toronto-raptors" element={<Raptors />}/>
-        <Route path="/utah-jazz" element={<Jazz />}/>
-        <Route path="/washington-wizzards" element={<Wizzards />}/>
+        <Route path="/ATL" element={<Hawks />}/>
+        <Route path="/BOS" element={<Celtics />}/>
+        <Route path="/BKN" element={<Nets />}/>
+        <Route path="/CHA" element={<Hornets />}/>
+        <Route path="/CHI" element={<Bulls />}/>
+        <Route path="/CLE" element={<Cavs />}/>
+        <Route path="/DAL" element={<Mavs />}/>
+        <Route path="/DEN" element={<Nuggets />}/>
+        <Route path="/DET" element={<Pistons />}/>
+        <Route path="/GSW" element={<Warriors />}/>
+        <Route path="/HOU" element={<Rockets />}/>
+        <Route path="/IND" element={<Pacers />}/>
+        <Route path="/LAC" element={<Clippers />}/>
+        <Route path="/LAL" element={<Lakers />}/>
+        <Route path="/MEM" element={<Grizzlies />}/>
+        <Route path="/MIA" element={<Heat />}/>
+        <Route path="/MIL" element={<Bucks />}/>
+        <Route path="/MIN" element={<Wolves />}/>
+        <Route path="/NOP" element={<Pelicans />}/>
+        <Route path="/NYK" element={<Knicks />}/>
+        <Route path="/OKC" element={<Thunder />}/>
+        <Route path="/ORL" element={<Magic />}/>
+        <Route path="/PHI" element={<Philly />}/>
+        <Route path="/PHX" element={<Suns />}/>
+        <Route path="/POR" element={<Blazers />}/>
+        <Route path="/SAC" element={<Kings />}/>
+        <Route path="/SAS" element={<Spurs />}/>
+        <Route path="/TOR" element={<Raptors />}/>
+        <Route path="/UTA" element={<Jazz />}/>
+        <Route path="/WSH" element={<Wizzards />}/>
         <Route path="*" element={<Error />}/>
       </Routes>
       
